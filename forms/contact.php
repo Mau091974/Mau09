@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  $receiving_email_address = 'falcoonstar5@gmail.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -23,13 +23,14 @@
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
+// Make sure to enter the correct Gmail SMTP credentials.
   /*
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
+    'host' => 'smtp.gmail.com',       // Gmail SMTP server
+    'username' => 'falcoonstar5@gmail.com',  // Your Gmail address
+    'password' => 'R0ckk@23',    // Your Gmail password or app-specific password
+    'port' => 587,                    // Use 587 for TLS or 465 for SSL
+    'secure' => 'tls'                 // Set 'tls' for TLS encryption
   );
   */
 
