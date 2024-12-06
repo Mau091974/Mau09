@@ -27,8 +27,8 @@
   /*
   $contact->smtp = array(
     'host' => 'smtp.gmail.com',       // Gmail SMTP server
-    'username' => 'falcoonstar5@gmail.com',  // Your Gmail address
-    'password' => 'R0ckk@23',    // Your Gmail password or app-specific password
+    'username' => 'f',  // Your Gmail address
+    'password' => '',    // Your Gmail password or app-specific password
     'port' => 587,                    // Use 587 for TLS or 465 for SSL
     'secure' => 'tls'                 // Set 'tls' for TLS encryption
   );
@@ -39,4 +39,9 @@
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
+
+
+
+
 ?>
+
